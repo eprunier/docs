@@ -2,9 +2,10 @@
 
 ### Recipe
 
-    $ socat TCP4-LISTEN:<local-port> SOCKS4A:localhost:<dest-host>:<dest-port>,socksport=<tor-port>
+    $ socat TCP4-LISTEN:<port> SOCKS4A:<tor-host>:<dest-host>:<dest-port>,socksport=<tor-port>
+    $ ssh <user>@<tor-host> -p <port>
 
-- Socat is listening for requests on port &lt;local-port&gt; (IPv4 protocol).
+- Socat is listening for requests on port &lt;port&gt; (IPv4 protocol).
 - Socat is connected to &lt;dest-host&gt;:&lt;dest-port&gt; via the socks v4 proxy on &lt;tor-host&gt;:&lt;tor-port&gt;
 
 ### Example
