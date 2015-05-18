@@ -6,7 +6,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Filter outgoing HTTP requests
+## Filter HTTP requests
 
 Only HTTP requests
 
