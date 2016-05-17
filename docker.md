@@ -3,8 +3,10 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Create a container](#create-a-container)
-- [Detach and attach to a running container](#detach-and-attach-to-a-running-container)
+- [Container attach and detach](#container-attach-and-detach)
 - [Find and delete dangling volumes](#find-and-delete-dangling-volumes)
+- [Docker tools](#docker-tools)
+  - [VirtualBox behind a proxy](#virtualbox-behind-a-proxy)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -18,7 +20,7 @@ Options:
 * -i : interactive mode, keep STDIN open
 * -t : associate a pseudo TTY
 
-## Detach and attach to a running container
+## Container attach and detach
 
 Detach from a running container : CTRL+p+q
 
@@ -35,3 +37,15 @@ Find volumes :
 Delete volumes : 
 
     $ docker volume rm $(docker volume ls -f dangling=true)
+
+## Docker tools
+### VirtualBox behind a proxy
+
+    host> $ docker-machine ssh default
+    vm> $ sudo -s
+    vm> # echo "export HTTP_PROXY=<proxy_url>" >> /var/lib/boot2docker/profile
+    vm> # echo "export HTTPS_PROXY=<proxy_url>" >> /var/lib/boot2docker/profile
+    vm> # exit
+    vm> $ exit
+    host> $ docker-machine restart default
+
