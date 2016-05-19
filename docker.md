@@ -36,7 +36,7 @@ Find volumes :
 
 Delete volumes : 
 
-    $ docker volume rm $(docker volume ls -f dangling=true)
+    $ docker volume rm $(docker volume ls -f dangling=true -q)
 
 ## Docker tools
 ### VirtualBox behind a proxy
@@ -48,4 +48,3 @@ Delete volumes :
     vm> # exit
     vm> $ exit
     host> $ docker-machine restart default
-
