@@ -41,10 +41,8 @@ Delete volumes :
 ## Docker tools
 ### VirtualBox behind a proxy
 
-    host> $ docker-machine ssh default
-    vm> $ sudo -s
-    vm> # echo "export HTTP_PROXY=<proxy_url>" >> /var/lib/boot2docker/profile
-    vm> # echo "export HTTPS_PROXY=<proxy_url>" >> /var/lib/boot2docker/profile
-    vm> # exit
-    vm> $ exit
-    host> $ docker-machine restart default
+Create the following environment variables before the creation of the VM:
+
+    HTTP_PROXY=[proxy_url]
+    HTTPS_PROXY=[proxy_url]
+    NO_PROXY=localhost,192.168.99.100
