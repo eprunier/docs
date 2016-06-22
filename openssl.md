@@ -24,7 +24,7 @@
 ## Create 
 ### Self-signed certificate
 
-    $ openssl req -x509 -nodes [-days 365] -newkey rsa:1024 -out <path_to_certificate> -keyout <path_to_private_key>
+    $ openssl req -x509 -nodes -days 365 -newkey rsa:1024 -out <path_to_certificate> -keyout <path_to_private_key>
 
 ## Convert 
 ### Convert certificate from PEM to PKCS12
