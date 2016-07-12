@@ -2,6 +2,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+- [Create an image](#create-an-image)
 - [Create a container](#create-a-container)
 - [Container attach and detach](#container-attach-and-detach)
 - [Find and delete dangling volumes](#find-and-delete-dangling-volumes)
@@ -9,6 +10,16 @@
   - [VirtualBox behind a proxy](#virtualbox-behind-a-proxy)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Create an image
+
+In a directory with a Dockerfile:
+
+    $ docker build -t <image_name>[:<image_tag>] .
+
+Build behind a proxy :
+
+    $ docker build -t <image_name>[:<image_tag>] --build-arg http_proxy=<proxy_url> --build-arg https_proxy=<proxy_url> .
 
 ## Create a container
 
