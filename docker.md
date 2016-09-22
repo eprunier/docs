@@ -52,8 +52,10 @@ Delete volumes :
 ## Docker tools
 ### VirtualBox behind a proxy
 
-Create the following environment variables before the creation of the VM:
+Create the default VM with the following command:
 
-    HTTP_PROXY=[proxy_url]
-    HTTPS_PROXY=[proxy_url]
-    NO_PROXY=localhost,192.168.99.100
+    $ docker-machine create -d virtualbox \
+    --engine-env HTTP_PROXY=<proxy_url> \
+    --engine-env HTTPS_PROXY=<proxy_url> \
+    --engine-env NO_PROXY=localhost,192.168.100 \
+    default
