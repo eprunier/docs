@@ -57,5 +57,5 @@ Create the default VM with the following command:
     $ docker-machine create -d virtualbox \
     --engine-env HTTP_PROXY=<proxy_url> \
     --engine-env HTTPS_PROXY=<proxy_url> \
-    --engine-env NO_PROXY=localhost,192.168.100 \
+    --engine-env NO_PROXY=localhost,192.168.99.100 \
     default
