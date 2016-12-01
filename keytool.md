@@ -11,28 +11,31 @@
 - [Export a PKCS12 from a JKS keystore](#export-a-pkcs12-from-a-jks-keystore)
   - [Recipe](#recipe-2)
   - [Example](#example-2)
+- [Import a certificate with private key into a JKS keystore](#import-a-certificate-with-private-key-into-a-jks-keystore)
+  - [Recipe](#recipe-3)
+  - [Example](#example-3)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Import a certificate into a JKS keystore
 ### Recipe
 
-    keytool -keystore <keystore> -importcert -alias <alias> -file <certificate_file>
+    keytool -importcert -keystore <keystore> -alias <alias> -file <certificate_file>
 
 ### Example
 
-    keytool -keystore foo.jks -importcert -alias bar -file bar.crt
+    keytool -importcert -keystore foo.jks -alias bar -file bar.crt
 
 ## Export a certificate from a JKS keystore
 ### Recipe
 
-    keytool -keystore <keystore> -exportcert -alias <alias> -file <certificate_file> [-rfc]
+    keytool -exportcert -keystore <keystore> -alias <alias> -file <certificate_file> [-rfc]
 
 If _-rfc_ is used, the certificat will be exported in base64 PEM encoded format, otherwise it will be binary DER encoded format.
 
 ### Example
 
-    keytool -keystore foo.jks -exportcert -alias bar -file bar.crt [-rfc]
+    keytool -exportcert -keystore foo.jks -alias bar -file bar.crt [-rfc]
 
 ## Export a PKCS12 from a JKS keystore
 ### Recipe
@@ -52,3 +55,18 @@ If _-rfc_ is used, the certificat will be exported in base64 PEM encoded format,
     -srckeystore foo.jks -destkeystore foo.p12 \
     -srcstoretype JKS -deststoretype PKCS12 \
     -srcalias bar -destalias bar
+
+## Import a certificate with private key into a JKS keystore
+__Note:__ certificate and private key must be in a PKCS12 keystore (see openssl for creating a PKCS12 with a certificate and private key).
+
+### Recipe
+
+    keytool -importkeystore \
+    -srckeystore <PKCS12 keystore> -srcstoretype pkcs12 -srcalias <alias>\
+    -destkeystore <JKS keystore> -destalias <alias>
+
+### Example
+
+    keytool -importkeystore \
+    -srckeystore foo.p12 -srcstoretype pkcs12 -srcalias foo\
+    -destkeystore foo.jks -destalias foo
