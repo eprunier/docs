@@ -14,6 +14,8 @@
 - [Import a certificate with private key into a JKS keystore](#import-a-certificate-with-private-key-into-a-jks-keystore)
   - [Recipe](#recipe-3)
   - [Example](#example-3)
+- [Misc](#misc)
+  - [Set output language](#set-output-language)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -70,3 +72,8 @@ __Note:__ certificate and private key must be in a PKCS12 keystore (see openssl 
     keytool -importkeystore \
     -srckeystore foo.p12 -srcstoretype pkcs12 -srcalias foo\
     -destkeystore foo.jks -destalias foo
+
+## Misc
+### Set output language
+
+    keytool -J-Duser.language=en -list -keystore <keystore file>
