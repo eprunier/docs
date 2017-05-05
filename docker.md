@@ -45,7 +45,7 @@ Find volumes :
 
     $ docker volume ls -f dangling=true
 
-Delete volumes : 
+Delete volumes :
 
     $ docker volume rm $(docker volume ls -f dangling=true -q)
 
@@ -57,5 +57,10 @@ Create the default VM with the following command:
     $ docker-machine create -d virtualbox \
     --engine-env HTTP_PROXY=<proxy_url> \
     --engine-env HTTPS_PROXY=<proxy_url> \
-    --engine-env NO_PROXY=localhost,192.168.99.100 \
+    --engine-env NO_PROXY=localhost \
     default
+
+Windows tip for Cygwin shell configuration, put the following code in .zshrc, .bashrc...:
+
+    eval $(docker-machine env default)
+    export no_proxy=$no_proxy,$(docker-machine ip default)
