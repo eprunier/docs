@@ -4,7 +4,7 @@
 
 - [Display](#display)
   - [CSR](#csr)
-  - [Certificat](#certificat)
+  - [Certificate](#certificate)
 - [Create](#create)
   - [Self-signed certificate](#self-signed-certificate)
   - [Create a PKCS12 containing a private key and a certificate](#create-a-pkcs12-containing-a-private-key-and-a-certificate)
@@ -17,9 +17,15 @@
 
     $ openssl req -in <csr_file> -noout -text
 
-### Certificat
+### Certificate
+
+Certificate in PEM format:
 
     $ openssl x509 -in <certificate_file> -noout -text
+
+Certificate in DER format:
+
+    $ openssl x509 -in <certificate_file> -inform der -noout -text
 
 ## Create
 ### Self-signed certificate
