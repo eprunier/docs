@@ -12,6 +12,9 @@
 - [Convert](#convert)
   - [DER certificate to PEM](#der-certificate-to-pem)
   - [PKCS12 file containing certificate and private key to PEM](#pkcs12-file-containing-certificate-and-private-key-to-pem)
+- [Export](#export)
+  - [Export private key from PKCS12](#export-private-key-from-pkcs12)
+  - [Export certificate from PKCS12](#export-certificate-from-pkcs12)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -33,6 +36,7 @@ Certificate in DER format:
 Certificate and private key in PKCS12 format:
 
     $ openssl pkcs12 -info -nodes -in <file>.pfx
+
 
 ## Create
 ### Self-signed certificate
@@ -58,3 +62,13 @@ Certificate and private key in PKCS12 format:
 Usual extensions for PKCS12 files: .p12 or .pfx
 
     $ openssl pkcs12 -in <file>.p12 -out <file>.pem -nodes
+
+
+## Export
+### Export private key from PKCS12
+
+    $ openssl pkcs12 -in <file>.pfx -nocerts -out <file>.key
+
+### Export certificate from PKCS12
+
+    $ openssl pkcs12 -in <file>.pfx -clcerts -nokeys -out <file>.pem
