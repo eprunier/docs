@@ -9,6 +9,8 @@
   - [Self-signed certificate](#self-signed-certificate)
   - [Create a PKCS12 containing a private key and a certificate](#create-a-pkcs12-containing-a-private-key-and-a-certificate)
   - [Create a PKCS7 from a certificate](#create-a-pkcs7-from-a-certificate)
+- [Convert](#convert)
+  - [DER certificate to PEM](#der-certificate-to-pem)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -39,3 +41,9 @@ Certificate in DER format:
 ### Create a PKCS7 from a certificate
 
 		$ openssl crl2pkcs7 -certfile <file_name> -nocrl
+
+
+## Convert
+### DER certificate to PEM
+
+    $ openssl x509 -inform der -in <certificate>.crt -out <certificate>.pem
