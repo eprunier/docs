@@ -30,6 +30,10 @@ Certificate in DER format:
 
     $ openssl x509 -in <certificate_file> -inform der -noout -text
 
+Certificate and private key in PKCS12 format:
+
+    $ openssl pkcs12 -info -nodes -in <file>.pfx
+
 ## Create
 ### Self-signed certificate
 
