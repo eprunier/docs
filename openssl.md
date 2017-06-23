@@ -11,6 +11,7 @@
   - [Create a PKCS7 from a certificate](#create-a-pkcs7-from-a-certificate)
 - [Convert](#convert)
   - [DER certificate to PEM](#der-certificate-to-pem)
+  - [PKCS12 file containing certificate and private key to PEM](#pkcs12-file-containing-certificate-and-private-key-to-pem)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -47,3 +48,9 @@ Certificate in DER format:
 ### DER certificate to PEM
 
     $ openssl x509 -inform der -in <certificate>.crt -out <certificate>.pem
+
+### PKCS12 file containing certificate and private key to PEM
+
+Usual extensions for PKCS12 files: .p12 or .pfx
+
+    $ openssl pkcs12 -in <file>.p12 -out <file>.pem -nodes
