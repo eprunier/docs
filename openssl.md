@@ -49,7 +49,7 @@ Certificate and private key in PKCS12 format:
 
 ### Create a PKCS7 from a certificate
 
-		$ openssl crl2pkcs7 -certfile <file_name> -nocrl
+    $ openssl crl2pkcs7 -certfile <file_name> -nocrl
 
 
 ## Convert
