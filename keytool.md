@@ -22,11 +22,11 @@
 ## Import a certificate into a JKS keystore
 ### Recipe
 
-    keytool -importcert -keystore <keystore> -alias <alias> -file <certificate_file>
+    keytool -importcert -keystore <keystore> -alias <alias> -file <certificate_file>.crt.pem
 
 ### Example
 
-    keytool -importcert -keystore foo.jks -alias bar -file bar.crt
+    keytool -importcert -keystore foo.jks -alias bar -file bar.crt.pem
 
 ## Export a certificate from a JKS keystore
 ### Recipe
@@ -37,7 +37,7 @@ If _-rfc_ is used, the certificat will be exported in base64 PEM encoded format,
 
 ### Example
 
-    keytool -exportcert -keystore foo.jks -alias bar -file bar.crt [-rfc]
+    keytool -exportcert -keystore foo.jks -alias bar -file bar.crt.pem -rfc
 
 ## Export a PKCS12 from a JKS keystore
 ### Recipe
@@ -59,7 +59,7 @@ If _-rfc_ is used, the certificat will be exported in base64 PEM encoded format,
     -srcalias bar -destalias bar
 
 ## Import a certificate with private key into a JKS keystore
-__Note:__ certificate and private key must be in a PKCS12 keystore (see openssl for creating a PKCS12 with a certificate and private key).
+__Note:__ certificate and private key must be in a PKCS12 (.pfx/.p12) keystore (see openssl for creating a PKCS12 with a certificate and private key).
 
 ### Recipe
 
@@ -70,7 +70,7 @@ __Note:__ certificate and private key must be in a PKCS12 keystore (see openssl 
 ### Example
 
     keytool -importkeystore \
-    -srckeystore foo.p12 -srcstoretype pkcs12 -srcalias foo\
+    -srckeystore foo.pfx -srcstoretype pkcs12 -srcalias foo\
     -destkeystore foo.jks -destalias foo
 
 ## Misc
