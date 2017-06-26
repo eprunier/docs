@@ -27,11 +27,11 @@
 
 Certificate in PEM format:
 
-    $ openssl x509 -in <certificate_file> -noout -text
+    $ openssl x509 -in <certificate_file>.crt.pem -noout -text
 
 Certificate in DER format:
 
-    $ openssl x509 -in <certificate_file> -inform der -noout -text
+    $ openssl x509 -in <certificate_file>.crt -inform der -noout -text
 
 Certificate and private key in PKCS12 format:
 
@@ -41,34 +41,34 @@ Certificate and private key in PKCS12 format:
 ## Create
 ### Self-signed certificate
 
-    $ openssl req -x509 -nodes -days 365 -newkey rsa:1024 -out <path_to_certificate> -keyout <path_to_private_key>
+    $ openssl req -x509 -nodes -days 365 -newkey rsa:1024 -out <certificate_file>.crt.pem -keyout <private_key_file>.key.pem
 
 ### Create a PKCS12 containing a private key and a certificate
 
-    $ openssl pkcs12 -export -out <name>.p12 -inkey <key>.pem -in <certificate>.pem -name <alias>
+    $ openssl pkcs12 -export -out <keystore_file>.pfx -inkey <key_file>.key.pem -in <certificate_file>.crt.pem -name <alias>
 
 ### Create a PKCS7 from a certificate
 
-    $ openssl crl2pkcs7 -certfile <file_name> -nocrl
+    $ openssl crl2pkcs7 -certfile <certificate_file>.crt.pem -nocrl
 
 
 ## Convert
 ### DER certificate to PEM
 
-    $ openssl x509 -inform der -in <certificate>.crt -out <certificate>.pem
+    $ openssl x509 -inform der -in <certificate>.crt -out <certificate>.crt.pem
 
 ### PKCS12 file containing certificate and private key to PEM
 
-Usual extensions for PKCS12 files: .p12 or .pfx
+Usual extensions for PKCS12 files: .pfx or .p12
 
-    $ openssl pkcs12 -in <file>.p12 -out <file>.pem -nodes
+    $ openssl pkcs12 -in <file>.pfx -out <file>.pem -nodes
 
 
 ## Export
 ### Export private key from PKCS12
 
-    $ openssl pkcs12 -in <file>.pfx -nocerts -out <file>.key
+    $ openssl pkcs12 -in <pkcs12_file>.pfx -nocerts -out <key_file>.key.pem
 
 ### Export certificate from PKCS12
 
-    $ openssl pkcs12 -in <file>.pfx -clcerts -nokeys -out <file>.pem
+    $ openssl pkcs12 -in <pkcs12_file>.pfx -clcerts -nokeys -out <certificate_file>.crt.pem
