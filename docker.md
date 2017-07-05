@@ -5,7 +5,9 @@
 - [Create an image](#create-an-image)
 - [Create a container](#create-a-container)
 - [Container attach and detach](#container-attach-and-detach)
-- [Find and delete dangling volumes](#find-and-delete-dangling-volumes)
+- [Clean up](#clean-up)
+  - [Delete dangling volumes](#delete-dangling-volumes)
+  - [Delete dangling images](#delete-dangling-images)
 - [Docker tools](#docker-tools)
   - [VirtualBox behind a proxy](#virtualbox-behind-a-proxy)
 
@@ -39,15 +41,14 @@ Attach to a running container:
 
     $ docker attach <container-id>
 
-## Find and delete dangling volumes
-
-Find volumes :
-
-    $ docker volume ls -f dangling=true
-
-Delete volumes :
+## Clean up
+### Delete dangling volumes
 
     $ docker volume rm $(docker volume ls -f dangling=true -q)
+
+### Delete dangling images
+
+    $ docker rmi $(docker images -q -f dangling=true)
 
 ## Docker tools
 ### VirtualBox behind a proxy
