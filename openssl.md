@@ -5,6 +5,7 @@
 - [Display](#display)
   - [CSR](#csr)
   - [Certificate](#certificate)
+  - [Private key](#private-key)
 - [Create](#create)
   - [Self-signed certificate](#self-signed-certificate)
   - [Create a PKCS12 containing a private key and a certificate](#create-a-pkcs12-containing-a-private-key-and-a-certificate)
@@ -36,6 +37,10 @@ Certificate in DER format:
 Certificate and private key in PKCS12 format:
 
     $ openssl pkcs12 -info -nodes -in <file>.pfx
+
+### Private key
+
+    $ openssl rsa -in <private_key_file>.key.pem -noout -text 
 
 
 ## Create
