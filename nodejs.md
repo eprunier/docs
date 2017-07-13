@@ -2,33 +2,29 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [NodeJS](#nodejs)
-  - [Package management](#package-management)
-    - [NPM](#npm)
-  - [Development](#development)
-    - [Web](#web)
-    - [CLI](#cli)
-    - [XML](#xml)
+- [Package management](#package-management)
+  - [NPM](#npm)
+- [Development](#development)
+  - [Web](#web)
+  - [CLI](#cli)
+  - [XML](#xml)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# NodeJS
-
-## Package management
+# Package management
 
 * [NPM](https://npmjs.org)
 * [Yarn](https://yarnpkg.com)
 
-### NPM
+## NPM
 
 Using NPM behind a proxy
 
     $ npm config set proxy "<proxy_url>"
     $ npm config set https-proxy "<proxy_url>"
 
-## Development
-
-### Web
+# Development
+## Web
 
 Frameworks
 
@@ -40,11 +36,11 @@ Libraries
 * [Hapi](https://hapijs.com)
 * [Koa](http://koajs.com)
 
-### CLI
+## CLI
 
 * yargs - command line parser
 
-### XML
+## XML
 
 * xmldom
 * xml-crypto - XMLDSIG library
