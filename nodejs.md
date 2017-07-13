@@ -8,6 +8,7 @@
   - [Web](#web)
   - [CLI](#cli)
   - [XML](#xml)
+  - [Crypto](#crypto)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -44,3 +45,8 @@ Libraries
 
 * xmldom
 * xml-crypto - XMLDSIG library
+
+## Crypto
+
+* [forge](https://github.com/digitalbazaar/forge)
+* [node-srp](https://github.com/mozilla/node-srp) - Secure remote password
