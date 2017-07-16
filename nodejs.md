@@ -5,6 +5,7 @@
 - [Package management](#package-management)
   - [NPM](#npm)
 - [Development](#development)
+  - [Functional programming](#functional-programming)
   - [Web](#web)
   - [CLI](#cli)
   - [XML](#xml)
@@ -25,14 +26,13 @@ Using NPM behind a proxy
     $ npm config set https-proxy "<proxy_url>"
 
 # Development
+## Functional programming
+
+* [Ramda](http://ramdajs.com)
+
 ## Web
 
-Frameworks
-
 * [LoopBack](https://loopback.io)
-
-Libraries
-
 * [Express](https://expressjs.com)
 * [Hapi](https://hapijs.com)
 * [Koa](http://koajs.com)
