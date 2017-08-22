@@ -32,7 +32,7 @@
 
     ## The directory for keeping all the keys/etc. By default, we store
     ## things in $HOME/.tor on Unix, and in Application Data\tor on Windows.
-    DataDirectory Data
+    #DataDirectory Data
 
     ## A comma-separated list of IP addresses and ports that your firewall
     ## allows you to connect to. The format is as for the addresses in ExitPolicy,
