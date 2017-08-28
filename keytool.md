@@ -2,6 +2,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+- [GUI alternatives to keytool](#gui-alternatives-to-keytool)
 - [Import a certificate into a JKS keystore](#import-a-certificate-into-a-jks-keystore)
   - [Recipe](#recipe)
   - [Example](#example)
@@ -18,6 +19,12 @@
   - [Set output language](#set-output-language)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## GUI alternatives to keytool
+
+* [KeysStore Explorer](http://keystore-explorer.org/)
+* [Portecle](http://portecle.sourceforge.net/)
+
 
 ## Import a certificate into a JKS keystore
 ### Recipe
