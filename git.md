@@ -4,6 +4,7 @@
 
 - [Configuration](#configuration)
   - [SSH/HTTPS](#sshhttps)
+  - [Some aliases](#some-aliases)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -14,3 +15,10 @@
 Force git to use HTTPS URLs over SSH:
 
     git config --global url."https://".insteadOf git://
+
+### Some aliases
+
+- gl="git log --pretty='%ci %Cred%h %Creset%s %Cgreen(%an)'"
+- gg="git log --oneline --graph --decorate"
+- gb="git branch -vva"
+- gs="git status"
