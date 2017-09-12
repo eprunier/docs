@@ -7,6 +7,7 @@
 - [Development](#development)
   - [Functional programming](#functional-programming)
   - [Web](#web)
+  - [RDBMS](#rdbms)
   - [CLI](#cli)
   - [XML](#xml)
   - [Crypto](#crypto)
@@ -15,8 +16,8 @@
 
 # Package management
 
-* [NPM](https://npmjs.org)
-* [Yarn](https://yarnpkg.com)
+- [NPM](https://npmjs.org)
+- [Yarn](https://yarnpkg.com)
 
 ## NPM
 
@@ -28,25 +29,29 @@ Using NPM behind a proxy
 # Development
 ## Functional programming
 
-* [Ramda](http://ramdajs.com)
+- [Ramda](http://ramdajs.com)
 
 ## Web
 
-* [LoopBack](https://loopback.io)
-* [Express](https://expressjs.com)
-* [Hapi](https://hapijs.com)
-* [Koa](http://koajs.com)
+- [LoopBack](https://loopback.io)
+- [Express](https://expressjs.com)
+- [Hapi](https://hapijs.com)
+- [Koa](http://koajs.com)
+
+## RDBMS
+
+- [Sequelize](http://docs.sequelizejs.com/)
 
 ## CLI
 
-* yargs - command line parser
+- yargs - command line parser
 
 ## XML
 
-* xmldom
-* xml-crypto - XMLDSIG library
+- xmldom
+- xml-crypto - XMLDSIG library
 
 ## Crypto
 
-* [forge](https://github.com/digitalbazaar/forge)
-* [node-srp](https://github.com/mozilla/node-srp) - Secure remote password
+- [forge](https://github.com/digitalbazaar/forge)
+- [node-srp](https://github.com/mozilla/node-srp) - Secure remote password
