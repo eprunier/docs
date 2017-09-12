@@ -27,6 +27,7 @@ Using NPM behind a proxy
     $ npm config set https-proxy "<proxy_url>"
 
 # Development
+
 ## Functional programming
 
 - [Ramda](http://ramdajs.com)
@@ -37,6 +38,7 @@ Using NPM behind a proxy
 - [Express](https://expressjs.com)
 - [Hapi](https://hapijs.com)
 - [Koa](http://koajs.com)
+- [Micro](https://github.com/zeit/micro)
 
 ## RDBMS
 
