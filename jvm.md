@@ -5,10 +5,13 @@
 - [JVM parameters](#jvm-parameters)
   - [Proxy](#proxy)
   - [Trustore](#trustore)
+- [JVM analysis](#jvm-analysis)
+  - [Thread dump](#thread-dump)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## JVM parameters
+
 ### Proxy
 
     -Dhttp.proxyHost=<hostname> -Dhttp.proxyPort=<port>
@@ -18,3 +21,9 @@
 ### Trustore
 
     -Djavax.net.ssl.trustStore=<trustStore_path> -Djavax.net.ssl.trustStorePassword=<password>
+
+## JVM analysis
+
+### Thread dump
+
+    jstack PID > out.dump
