@@ -34,7 +34,7 @@ Using NPM behind a proxy
 
 ## Web
 
-- [LoopBack](https://loopback.io)
+- [LoopBack](./loopback.md)
 - [Express](https://expressjs.com)
 - [Hapi](https://hapijs.com)
 - [Koa](http://koajs.com)
