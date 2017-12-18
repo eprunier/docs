@@ -27,3 +27,5 @@
 ### Thread dump
 
     jstack PID > out.dump
+
+You can upload the file to a service like fastThread.io to get an analysis.
