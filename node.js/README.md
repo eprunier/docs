@@ -48,13 +48,25 @@ Using Yarn behind a proxy
 - [Koa](http://koajs.com)
 - [Micro](https://github.com/zeit/micro)
 
+## Mobile
+
+- [Ionic](https://ionicframework.com/)
+- [React Native](https://facebook.github.io/react-native/)
+
+Comparisons:
+
+- [Ionic vs. React Native - which framework is better for cross-platform mobile app development?](https://dzone.com/articles/ionic-vs-react-native-which-framework-is-better-fo)
+- [Teact Native vs Ionic: a side-by-side comparison](https://www.codementor.io/fmcorz/react-native-vs-ionic-du1087rsw)
+- [Ionic vs React Native](https://medium.com/@ankushaggarwal/ionic-vs-react-native-3eb62f8943f8)
+
 ## RDBMS
 
 - [Sequelize](http://docs.sequelizejs.com/)
 
 ## CLI
 
-- yargs - command line parser
+- yargs
+- minimist
 
 ## XML
 
@@ -68,10 +80,22 @@ Using Yarn behind a proxy
 
 ## Test
 
+### General
+
+- [Tape](https://github.com/substack/tape) - Read [Why I use Tape Instead of Mocha & So Should You](https://medium.com/javascript-scene/why-i-use-tape-instead-of-mocha-so-should-you-6aa105d8eaf4) by Eric Elliott
+- [Jest](https://facebook.github.io/jest/)
+- [Mocha](https://mochajs.org/) + [Chai](http://chaijs.com/)
+- [Jasmine](https://jasmine.github.io/)
+
 ### Web testing
 
 - [PhantomJS](http://phantomjs.org/)
 - [Protractor](http://www.protractortest.org)
+
+### API testing
+
+- [SuperTest](https://github.com/visionmedia/supertest)
+- [Chai HTTP](https://github.com/chaijs/chai-http)
 
 ### Load testing
 
