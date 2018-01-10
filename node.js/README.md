@@ -23,14 +23,22 @@
 
 Using NPM behind a proxy
 
-    $ npm config set proxy "<proxy_url>"
-    $ npm config set https-proxy "<proxy_url>"
+    npm config set proxy "<proxy_url>"
+    npm config set https-proxy "<proxy_url>"
+
+## Yarn
+
+Using Yarn behind a proxy
+
+    yarn config --proxy <proxy_url>
+    yarn config --https-proxy <proxy_url>
 
 # Development
 
 ## Functional programming
 
 - [Ramda](http://ramdajs.com)
+- [Crocks](https://github.com/evilsoft/crocks)
 
 ## Web
 
@@ -57,3 +65,14 @@ Using NPM behind a proxy
 
 - [forge](https://github.com/digitalbazaar/forge)
 - [node-srp](https://github.com/mozilla/node-srp) - Secure remote password
+
+## Test
+
+### Web testing
+
+- [PhantomJS](http://phantomjs.org/)
+- [Protractor](http://www.protractortest.org)
+
+### Load testing
+
+- [Artillery](https://artillery.io/)
