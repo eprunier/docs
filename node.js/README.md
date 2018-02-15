@@ -75,8 +75,12 @@ Comparisons:
 
 ## Crypto
 
-- [forge](https://github.com/digitalbazaar/forge)
+- [Forge](https://github.com/digitalbazaar/forge)
 - [node-srp](https://github.com/mozilla/node-srp) - Secure remote password
+
+## GraphQL
+
+- [Prisma](https://github.com/graphcool/prisma)
 
 ## Test
 
