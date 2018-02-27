@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [LoopBack](#loopback)
+  - [Install LoopBack](#install-loopback)
+  - [Create an application](#create-an-application)
+  - [Datasources](#datasources)
+    - [MongoDB](#mongodb)
+  - [Remote methods](#remote-methods)
+  - [User creation and authentication](#user-creation-and-authentication)
+  - [Filtering data](#filtering-data)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # [LoopBack](http://loopback.io)
 
 ## Install LoopBack

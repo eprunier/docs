@@ -4,13 +4,21 @@
 
 - [Package management](#package-management)
   - [NPM](#npm)
+  - [Yarn](#yarn)
 - [Development](#development)
   - [Functional programming](#functional-programming)
   - [Web](#web)
+  - [Mobile](#mobile)
   - [RDBMS](#rdbms)
   - [CLI](#cli)
   - [XML](#xml)
   - [Crypto](#crypto)
+  - [GraphQL](#graphql)
+  - [Test](#test)
+    - [General](#general)
+    - [Web testing](#web-testing)
+    - [API testing](#api-testing)
+    - [Load testing](#load-testing)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
