@@ -11,6 +11,9 @@
   - [Mobile](#mobile)
   - [RDBMS](#rdbms)
   - [CLI](#cli)
+    - [Args](#args)
+    - [Colors](#colors)
+    - [Console application dev](#console-application-dev)
   - [XML](#xml)
   - [Crypto](#crypto)
   - [GraphQL](#graphql)
@@ -56,6 +59,9 @@ Using Yarn behind a proxy
 - [Koa](http://koajs.com)
 - [Micro](https://github.com/zeit/micro)
 
+- [Next.js](https://learnnextjs.com)
+- [Electrode](http://electrode.io/)
+
 ## Mobile
 
 - [Ionic](https://ionicframework.com/)
@@ -73,8 +79,21 @@ Comparisons:
 
 ## CLI
 
-- yargs
-- minimist
+### Args
+
+- [yargs](https://www.npmjs.com/package/yargs)
+- [minimist](https://www.npmjs.com/package/minimist)
+- [commander](https://www.npmjs.com/package/commander)
+
+### Colors
+
+- [Chalk](https://www.npmjs.com/package/chalk)
+- [Colors](https://www.npmjs.com/package/colors)
+
+### Console application dev
+
+- [Vorpal](https://www.npmjs.com/package/vorpal)
+- [Terminal Kit](https://www.npmjs.com/package/terminal-kit)
 
 ## XML
 
@@ -94,8 +113,8 @@ Comparisons:
 
 ### General
 
-- [Tape](https://github.com/substack/tape) - Read [Why I use Tape Instead of Mocha & So Should You](https://medium.com/javascript-scene/why-i-use-tape-instead-of-mocha-so-should-you-6aa105d8eaf4) by Eric Elliott
 - [Jest](https://facebook.github.io/jest/)
+- [Tape](https://github.com/substack/tape) - Read [Why I use Tape Instead of Mocha & So Should You](https://medium.com/javascript-scene/why-i-use-tape-instead-of-mocha-so-should-you-6aa105d8eaf4) by Eric Elliott
 - [Mocha](https://mochajs.org/) + [Chai](http://chaijs.com/)
 - [Jasmine](https://jasmine.github.io/)
 
@@ -103,6 +122,7 @@ Comparisons:
 
 - [PhantomJS](http://phantomjs.org/)
 - [Protractor](http://www.protractortest.org)
+- [Test Aramada](http://testarmada.io/)
 
 ### API testing
 
