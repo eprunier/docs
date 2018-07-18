@@ -46,6 +46,27 @@ Attach to a running container:
 
     docker attach <container-id>
 
+## Network
+
+Docker uses 172.17.0.0 for the docker0 interface.
+
+When creating networks Docker increments the subnet (172.18, 172.19...).
+If your local network is on the 172.x.y.z subnet it will may conflict at some point in time with a docker bridge.
+
+To solve this issue you can create a network manually like in the following example
+
+    docker network create --subnet 192.168.1.0/24
+
+Or define the network in your docker-compose file
+
+    networks:
+        default:
+            driver: bridge
+            ipam:
+                driver: default
+                config:
+                    - subnet: 192.168.2.0/24
+
 ## Clean up
 
 ### Container
