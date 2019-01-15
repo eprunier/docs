@@ -11,6 +11,7 @@
 * OpenSSL
   * [X509 certificates](./openssl/certificates.md)
   * [Encryption](./openssl/encryption.md)
+  * [TSR](./openssl/tsr.md)
 * [Shell](./shell.md)
 * [SSH](./ssh.md)
 * [Tor](./tor.md)
