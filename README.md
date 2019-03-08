@@ -3,9 +3,11 @@
 * [cURL](./curl.md)
 * [Docker](./docker.md)
 * [Git](./git.md)
+* [GPG](./gpg.md)
 * [HTTP](./http.md)
 * [JVM](./jvm.md)
 * [Keytool](./keytool.md)
+* [Network Tools](./network-tools.md)
 * [NodeJS](./node.js)
   * [LoopBack](./node.js/loopback.md)
 * OpenSSL
