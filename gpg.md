@@ -22,7 +22,9 @@ To define AES-256 as default cipher algo, add _cipher-algo AES256_ in _~/.gnupg/
 Encrypt
 
     gpg --symmetric --cipher-algo AES256 [--passphrase <passphrase>] -o <pgp_file> <source_file>
+    gpg2 --symmetric --cipher-algo AES256 [--passphrase <passphrase> --batch [--yes]] -o <pgp_file> <source_file>
 
 Decrypt
 
-    gpg -o <output_file> --decrypt [--passphrase <passphrase>] --quiet <gpg_file>
+    gpg --decrypt [--passphrase <passphrase>] --quiet -o <output_file> <gpg_file>
+    gpg2 --decrypt [--passphrase <passphrase> --batch [--yes]] --quiet -o <output_file> <gpg_file>
