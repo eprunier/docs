@@ -7,6 +7,7 @@
 - [Display](#display)
   - [CSR](#csr)
   - [Certificate](#certificate)
+  - [Remote certificate](#remote-certificate)
   - [Private key](#private-key)
 - [Create](#create)
   - [Self-signed certificate](#self-signed-certificate)
@@ -43,6 +44,10 @@ Certificate in DER format:
 Certificate and private key in PKCS12 format:
 
     openssl pkcs12 -info -nodes -in <file>.pfx
+
+### Remote certificate
+
+    echo 'Q' |  openssl s_client -connect <host>:<port> -showcerts 2>/dev/null | openssl x509 -inform pem -noout -text
 
 ### Private key
 
