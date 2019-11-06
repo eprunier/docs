@@ -57,7 +57,7 @@ Certificate and private key in PKCS12 format:
 
 ### Self-signed certificate
 
-    openssl req -x509 -nodes -days 365 -newkey rsa:1024 -out <certificate_file>.crt.pem -keyout <private_key_file>.key.pem
+    openssl req -x509 -nodes -days 365 -newkey rsa:2048 -out <certificate_file>.crt.pem -keyout <private_key_file>.key.pem
 
 ### Create a PKCS12 containing a private key and a certificate
 
