@@ -3,6 +3,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [GUI alternatives to keytool](#gui-alternatives-to-keytool)
+- [List JKS content](#list-jks-content)
 - [Import a certificate into a JKS keystore](#import-a-certificate-into-a-jks-keystore)
   - [Recipe](#recipe)
   - [Example](#example)
@@ -25,6 +26,9 @@
 * [KeysStore Explorer](http://keystore-explorer.org/)
 * [Portecle](http://portecle.sourceforge.net/)
 
+## List JKS content
+
+    keytool -list [-v] -keystore <keystore.jks>
 
 ## Import a certificate into a JKS keystore
 ### Recipe
